@@ -5,7 +5,6 @@ from sklearn.preprocessing import StandardScaler
 import joblib
 from sentence_transformers import SentenceTransformer
 
-# ... (parse_log_line function remains the same) ...
 def parse_log_line(line):
     log_pattern = re.compile(r'(\w+\s+\d+\s+\d{2}:\d{2}:\d{2})\s+([\w-]+)\s+([\w]+)\[(\d+)\]:\s+(.*)')
     match = log_pattern.match(line)
@@ -36,7 +35,7 @@ def main():
     features = pd.concat([structural_features.reset_index(drop=True), message_features_df.reset_index(drop=True), process_features.reset_index(drop=True)], axis=1)
     features.columns = features.columns.astype(str)
     
-    # --- NEW: Scale the features ---
+    # ---Scale the features ---
     print("Scaling features...")
     scaler = StandardScaler()
     features_scaled = scaler.fit_transform(features)

@@ -4,7 +4,7 @@ import time
 import random
 import re
 from sentence_transformers import SentenceTransformer
-from sklearn.preprocessing import StandardScaler # <-- Import StandardScaler
+from sklearn.preprocessing import StandardScaler
 
 # Import the parsing function
 from src.anomaly_detector.train_detector import parse_log_line
@@ -20,14 +20,12 @@ except FileNotFoundError:
     print("ERROR: Model files not found. Please run the updated train_detector.py first.")
     exit()
 
-# ... (malicious_logs list remains the same) ...
+
 malicious_logs = [
     "Sep 02 21:40:00 corp-server-01 sshd[9999]: Failed password for invalid user evil from 172.16.0.100 port 22",
     "Sep 02 21:41:00 web-prod-03 kernel: [9999]: Buffer overflow attempt detected from 10.0.5.20",
     "Sep 02 21:42:00 db-main-01 mysql[1111]: SQL injection attempt: ' or 1=1; --"
 ]
-
-# ... (imports and loading at the top remain the same) ...
 
 def process_log_entry(log_line):
     """Processes a new log line and returns the prediction and anomaly score."""
