@@ -54,13 +54,5 @@ def main(num_lines=10000):
             
     print(f"Successfully generated log file at '{log_file_path}'")
     
-    # Optional: Show the first 5 lines to verify
-    with open(log_file_path, 'r') as f:
-        print("\n--- First 5 Log Entries ---")
-        for i, line in enumerate(f):
-            if i >= 5:
-                break
-            print(line.strip())
-
 if __name__ == "__main__":
     main()

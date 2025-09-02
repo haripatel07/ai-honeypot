@@ -1,0 +1,31 @@
+Sep 02 21:53:45 db-main-01 mysql[7427]: apache2: AH00558: apache2: Could not reliably determine the server's fully qualified domain name
+Sep 02 21:53:45 db-main-01 sshd[2470]: mysql: [Note] Server socket created on IP: '127.0.0.1'.
+Sep 02 21:53:45 api-gateway-1 systemd[2329]: Accepted password for admin from 10.0.123.123 port 60479
+Sep 02 21:53:45 corp-server-01 sshd[1022]: Accepted password for ubuntu from 10.0.73.73 port 46456
+Sep 02 21:53:45 web-prod-03 cron[8717]: Accepted password for guest from 10.0.146.146 port 64791
+Sep 02 21:53:45 web-prod-03 cron[8206]: systemd: Started Session 99 of user guest.
+Sep 02 21:53:45 db-main-01 sshd[1164]: systemd: Started Session 76 of user ubuntu.
+Sep 02 21:53:45 api-gateway-1 kernel[7315]: kernel: a new usb device found, idVendor=1d6b, idProduct=0002
+Sep 02 21:53:45 corp-server-01 systemd[8158]: session opened for user ubuntu by (uid=0)
+Sep 02 21:53:45 corp-server-01 sshd[9055]: systemd: Started Session 30 of user root.
+Sep 02 21:53:45 web-prod-03 sshd[2644]: systemd: Started Session 65 of user testuser.
+Sep 02 21:53:45 db-main-01 kernel[4083]: apache2: AH00558: apache2: Could not reliably determine the server's fully qualified domain name
+Sep 02 21:53:45 web-prod-03 apache2[5649]: systemd: Started Session 48 of user admin.
+Sep 02 21:53:45 db-main-01 kernel[6725]: Accepted password for ubuntu from 10.0.109.109 port 64104
+Sep 02 21:53:45 corp-server-01 kernel[3534]: apache2: AH00558: apache2: Could not reliably determine the server's fully qualified domain name
+Sep 02 21:41:00 web-prod-03 kernel: [9999]: Buffer overflow attempt detected from 10.0.5.20
+Sep 02 21:53:45 db-main-01 sshd[2683]: apache2: AH00558: apache2: Could not reliably determine the server's fully qualified domain name
+Sep 02 21:53:45 corp-server-01 cron[1615]: apache2: AH00558: apache2: Could not reliably determine the server's fully qualified domain name
+Sep 02 21:53:45 web-prod-03 mysql[6335]: kernel: a new usb device found, idVendor=1d6b, idProduct=0002
+Sep 02 21:53:45 db-main-01 mysql[2642]: mysql: [Note] Server socket created on IP: '127.0.0.1'.
+Sep 02 21:53:45 api-gateway-1 kernel[6805]: kernel: a new usb device found, idVendor=1d6b, idProduct=0002
+Sep 02 21:53:45 corp-server-01 kernel[5078]: systemd: Started Session 96 of user root.
+Sep 02 21:53:45 db-main-01 kernel[3797]: apache2: AH00558: apache2: Could not reliably determine the server's fully qualified domain name
+Sep 02 21:53:45 web-prod-03 kernel[7570]: kernel: a new usb device found, idVendor=1d6b, idProduct=0002
+Sep 02 21:53:45 db-main-01 mysql[7347]: mysql: [Note] Server socket created on IP: '127.0.0.1'.
+Sep 02 21:53:45 api-gateway-1 cron[6221]: apache2: AH00558: apache2: Could not reliably determine the server's fully qualified domain name
+Sep 02 21:53:45 web-prod-03 sshd[4345]: kernel: a new usb device found, idVendor=1d6b, idProduct=0002
+Sep 02 21:53:45 db-main-01 apache2[3435]: CRON[3435]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Sep 02 21:53:45 db-main-01 systemd[2792]: mysql: [Note] Server socket created on IP: '127.0.0.1'.
+Sep 02 21:53:45 corp-server-01 cron[1205]: systemd: Started Session 37 of user guest.
+Sep 02 21:53:45 db-main-01 sshd[7943]: mysql: [Note] Server socket created on IP: '127.0.0.1'.

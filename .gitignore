@@ -1,1 +1,16 @@
-venv/ 
+# Virtual Environment
+venv/
+
+# Python cache
+__pycache__/
+
+# IDE and OS specific files
+.idea/
+.vscode/
+.DS_Store
+
+# Generated data and log files
+data/*.log
+
+# Generated model files
+models/*.joblib
