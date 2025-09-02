@@ -44,7 +44,7 @@ def main():
     print(f"Created scaled feature matrix with shape: {features_scaled.shape}")
 
     print("Training the Isolation Forest model...")
-    model = IsolationForest(n_estimators=100, contamination=0.01, random_state=42)
+    model = IsolationForest(n_estimators=100, contamination='auto', random_state=42)
     model.fit(features_scaled)
     
     # --- Save the scaler along with other artifacts ---
