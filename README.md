@@ -54,13 +54,13 @@ The repository is organized as follows:
 
 Follow these instructions to set up and run the project locally.
 
-### ### 1. Clone the Repository
+### 1. Clone the Repository
 ```bash
 git clone [https://github.com/haripatel07/ai-honeypot.git](https://github.com/haripatel07/ai-honeypot.git)
 cd ai-honeypot
 ```
 
-### ### 2. Set Up the Environment
+### 2. Set Up the Environment
 ```bash
 # Create and activate a virtual environment
 python -m venv venv
@@ -71,7 +71,7 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
-### ### 3. Run the Full Pipeline
+### 3. Run the Full Pipeline
 The project runs in three stages. Run these commands in order from the root directory.
 
 **Stage 1: Generate the baseline log data.**
