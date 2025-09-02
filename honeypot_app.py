@@ -57,7 +57,7 @@ def process_log_entry(log_line):
 def main():
     """Main simulation loop with diagnostic scores."""
     live_log_file = 'live_honeypot.log'
-    print(f"🍯 Honeypot is now live. Running a SHORT test simulation with diagnostics...")
+    print(f"Honeypot is now live. Running a SHORT test simulation with diagnostics...")
     print("Press Ctrl+C to stop.")
 
     try:
