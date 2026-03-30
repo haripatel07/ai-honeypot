@@ -96,3 +96,43 @@ Watch the terminal to see the stream of normal logs followed by the detection of
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+## Architecture
+
+Internet → Honeypot Listener (decoy ports) → Logger (local file-based) → Dashboard (not included in this codebase)
+
+- Current implementation is a single Python simulation service in `honeypot_app.py`.
+- There is no separate network listener service; system behavior is simulated from log data in `data/`.
+
+---
+## Deployment
+
+1. Copy `.env.example` to `.env` and adjust values.
+2. Review `models/` files exist (run the pipeline via `python src/anomaly_detector/train_detector.py`).
+3. Build and start containers:
+
+```bash
+docker-compose up --build
+```
+
+4. Monitor output and stop with Ctrl+C.
+
+---
+## Security Notice
+
+This repository is intended for research and lab use only. Running a honeypot can expose your system to adversarial input and risk. Deploy onto isolated infrastructure, do not use on production networks without proper controls.
+
+---
+## Services
+
+| Container | Port(s) | Purpose |
+| --- | --- | --- |
+| honeypot | 21, 22, 80, 8080 | Main honeypot simulation engine (`honeypot_app.py`) |
+
+---
+## Notes on project completeness
+
+- The project is complete as a simulation pipeline for generating logs, training an anomaly model, and running a detection simulation.
+- It does not include a separate real-time TCP/UDP port listener, centralized log aggregator service, or dashboard UI.
+- `docker-compose.yml` is configured for one service with volume persistence for logs and models.

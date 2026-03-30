@@ -1,0 +1,29 @@
+version: '3.9'
+
+services:
+  honeypot:
+    build: .
+    container_name: ai_honeypot
+    env_file: .env
+    environment:
+      - HONEYPOT_PORTS=${HONEYPOT_PORTS:-21,22,80,8080}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+      - ALERT_EMAIL=${ALERT_EMAIL:-}
+    ports:
+      - "21:21"
+      - "22:22"
+      - "80:80"
+      - "8080:8080"
+    volumes:
+      - honeypot-logs:/app/data
+      - ./models:/app/models
+      - ./live_honeypot.log:/app/live_honeypot.log
+    networks:
+      - honeypot-net
+
+volumes:
+  honeypot-logs:
+
+networks:
+  honeypot-net:
+    driver: bridge
